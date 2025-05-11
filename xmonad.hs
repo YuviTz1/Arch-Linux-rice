@@ -54,7 +54,7 @@ myModMask       = mod4Mask
 --
 -- > workspaces = ["web", "irc", "code" ] ++ map show [4..9]
 --
-myWorkspaces    = ["1","2","3","4","5","6","firefox","steam","dump"]
+myWorkspaces    = ["1","2","3","4","5","6","7","8","9"]
 
 -- Border colors for unfocused and focused windows, respectively.
 --
@@ -96,7 +96,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((0,                  0x1008ff02     ), spawn "brightnessctl -q s 5%+")
 
     -- lock the screen
-    , ((modm,               0xff1b     ), spawn "python3 ~/Scripts/i3lock.py")
+    , ((modm,               0xff1b     ), spawn "python3 ~/scripts/i3lock.py")
 
     -- launch emacsclient
     , ((modm .|. shiftMask, 0x5c     ), spawn "emacsclient -c -a 'emacs' ")
@@ -316,8 +316,9 @@ toggleFull = withFocused (\windowId -> do
 main = do
 	--spawnPipe "killall xmobar"
 	--xmproc <- spawnPipe "picom &"
-	xmproc <- spawnPipe "xmobar ~/.config/xmobar/xmobar_main.config"
+	--xmproc <- spawnPipe "xmobar ~/.config/xmobar/xmobar_main.config"
 	--spawnPipe "killall xmobar"
+	xmproc <- spawnPipe "/home/yuviarch/scripts/set-monitors.sh && /home/yuviarch/scripts/launch-polybar.sh"
 	xmonad $ docks $ ewmhFullscreen . ewmh $ defaults xmproc
 	
 

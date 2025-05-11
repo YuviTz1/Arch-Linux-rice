@@ -1,0 +1,97 @@
+# alt_send_esc = true
+
+[[mouse.bindings]]
+action = "PasteSelection"
+mouse = "Middle"
+
+[colors]
+#working_directory = "None"
+#duration = 0
+draw_bold_text_with_bright_colors = true
+
+[colors.bright]
+black = "#686868"
+blue = "#57c7ff"
+cyan = "#9aedfe"
+green = "#5af78e"
+magenta = "#ff6ac1"
+red = "#ff5c57"
+white = "#f1f1f0"
+yellow = "#f3f99d"
+
+[colors.normal]
+black = "#282a36"
+blue = "#57c7ff"
+cyan = "#9aedfe"
+green = "#5af78e"
+magenta = "#ff6ac1"
+red = "#ff5c57"
+white = "#f1f1f0"
+yellow = "#f3f99d"
+
+[colors.primary]
+background = "#1B1F24"
+foreground = "#eff0eb"
+
+[cursor]
+unfocused_hollow = true
+
+[cursor.style]
+blinking = "On"
+shape = "Block"
+
+[debug]
+log_level = "Warn"
+persistent_logging = false
+print_events = false
+render_timer = false
+
+[font]
+size = 8
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.normal]
+family = "monospace"
+
+[font.offset]
+x = 0
+y = 0
+
+[mouse]
+hide_when_typing = false
+
+# [mouse.double_click]
+# threshold = 300
+#
+# [mouse.triple_click]
+# threshold = 300
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[selection]
+save_to_clipboard = false
+semantic_escape_chars = ''',│`|:"' ()[]{}<>'''
+
+[window]
+decorations = "none"
+dynamic_padding = true
+dynamic_title = true
+opacity = 0.7
+startup_mode = "Maximized"
+
+[window.dimensions]
+columns = 0
+lines = 0
+
+[window.padding]
+x = 4
+y = 1
+
+[general]
+live_config_reload = true
+working_directory = "None"
